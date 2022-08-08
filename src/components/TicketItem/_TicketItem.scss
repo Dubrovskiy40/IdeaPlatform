@@ -1,0 +1,38 @@
+.ticket {
+    
+      &__btn_block {}
+    
+      &__title {}
+    
+      &__btn {
+      white-space: nowrap;
+      }
+    
+      &__info {}
+    
+      &__from_block {}
+    
+      &__from_time {}
+    
+      &__from_name {
+            white-space: nowrap;
+      }
+    
+      &__from_date {}
+    
+      &__stops {
+            white-space: nowrap;
+            margin: auto;
+            padding: 0 30px;
+      }
+    
+      &__to_block {}
+    
+      &__to_time {}
+    
+      &__to_name {
+            white-space: nowrap;
+      }
+    
+      &__to_date {}
+    }
