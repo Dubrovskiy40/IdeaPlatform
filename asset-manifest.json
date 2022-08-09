@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/IdeaPlatform/static/css/main.b496ec49.css",
+    "main.js": "/IdeaPlatform/static/js/main.ab6ebb0d.js",
+    "index.html": "/IdeaPlatform/index.html",
+    "main.b496ec49.css.map": "/IdeaPlatform/static/css/main.b496ec49.css.map",
+    "main.ab6ebb0d.js.map": "/IdeaPlatform/static/js/main.ab6ebb0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b496ec49.css",
+    "static/js/main.ab6ebb0d.js"
+  ]
+}
