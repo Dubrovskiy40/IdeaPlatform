@@ -14,11 +14,11 @@ type ObjectType = {
     price: number
 }
 
-interface ITicketItem {
+type Props = {
     data: ObjectType
-}
+};
 
-const TicketItem: React.FC<ITicketItem> = ({ data }) => {
+const TicketItem = ({ data }: Props) => {
     const {origin, origin_name, destination, destination_name, departure_date, departure_time, arrival_date, arrival_time, carrier, stops, price} = data;
 
     const numWord = (value: number, words: Array<string>): string => {

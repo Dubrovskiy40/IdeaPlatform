@@ -1,12 +1,11 @@
 import {
     GET_TICKETS,
-    FILTER_TICKETS
+    FILTER_TICKETS,
 } from '../store/types/ticketsTypes';
-import {InitialStateTicketsReducerArrayType} from '../store/ticketsReducer';
 
-export type ActionsTypes = GetTicketsPayloadType | FilterTicketsActionType
+export type ActionsTypes = GetTicketsActionType | FilterTicketsActionType
 
-type GetTicketsPayloadType = {
+export type GetTicketsPayloadType = {
     origin: string
     origin_name: string,
     destination: string,

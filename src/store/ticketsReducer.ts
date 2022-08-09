@@ -1,9 +1,8 @@
 import {
     GET_TICKETS,
-    FILTER_TICKETS
+    FILTER_TICKETS,
 } from './types/ticketsTypes';
 import {ActionsTypes} from "../actions/ticketsAction";
-import ticketsJson from "../local-json/tickets.json";
 
 export type InitialStateTicketsReducerArrayType = {
     origin: string
@@ -21,10 +20,10 @@ export type InitialStateTicketsReducerArrayType = {
 
 const initialState: Array<InitialStateTicketsReducerArrayType> = [];
 
-const ticketsReducer = (state = initialState, { type, payload }: ActionsTypes | any): Array<InitialStateTicketsReducerArrayType> => {
+const ticketsReducer = (state = initialState, { type, payload }: ActionsTypes): Array<InitialStateTicketsReducerArrayType> => {
     switch (type) {
         case GET_TICKETS:
-            return [...payload];
+            return [...payload.sort((a, b) => a.price > b.price ? 1 : -1)];
 
         case FILTER_TICKETS:
             if (payload === 'zero') {

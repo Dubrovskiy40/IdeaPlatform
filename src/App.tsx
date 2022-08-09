@@ -43,9 +43,9 @@ function App() {
             <div>
                 <h2 className="mb-5">Валюта</h2>
                 <Stack direction="row" spacing={2}>
-                    <Button variant="contained">RUB</Button>
-                    <Button variant="contained">USD</Button>
-                    <Button variant="contained">EUR</Button>
+                    <Button variant="contained" name='RUB'>RUB</Button>
+                    <Button variant="contained" name='USD'>USD</Button>
+                    <Button variant="contained" name='EUR'>EUR</Button>
                 </Stack>
                 <h2 className="mt-5">Количество пересадок</h2>
                 <Box className="flex flex-col">
